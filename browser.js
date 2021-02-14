@@ -1,7 +1,6 @@
 const masterServers = [
-    "http://83.84.157.154:3000/list",
-    "http://eldewrito.red-m.net/list",
-    "http://158.69.166.144:8080/list"
+    "http://http://192.99.43.154:8080/list",
+    "http://eldewrito.red-m.net/list"
 ];
 const playlists = ['all', 'social','ranked','customs','favourites'];
 
