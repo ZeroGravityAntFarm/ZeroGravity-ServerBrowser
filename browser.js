@@ -1,7 +1,7 @@
 const masterServers = [
+    "http://eldewrito.red-m.net/list",
     "http://master01.zerogravityantfarm.com:8080/list",
-    "http://master00.zerogravityantfarm.com/list",
-    "http://eldewrito.red-m.net/list"
+    "http://master00.zerogravityantfarm.com/list"
 ];
 const playlists = ['all', 'social','ranked','customs','favourites'];
 
