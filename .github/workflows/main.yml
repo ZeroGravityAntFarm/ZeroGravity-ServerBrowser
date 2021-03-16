@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  DeployMaps:
+  DeployBrowser:
     name: scp browser
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +22,7 @@ jobs:
 
   CopyLocal:
     name: Copy Local Files
-    needs: [DeployMaps, DeployVoteConfig]
+    needs: [DeployBrowser]
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
