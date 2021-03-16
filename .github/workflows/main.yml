@@ -16,6 +16,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: 22
-        source: "public/"
-        target: "/home/${{ secrets.USERNAME }}/containers/server_browser/public/"
+        source: "public"
+        target: "/home/${{ secrets.USERNAME }}/containers/server_browser/"
         overwrite: 1
