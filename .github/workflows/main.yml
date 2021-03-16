@@ -17,19 +17,5 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         source: "."
-        target: "/home/${{ secrets.USERNAME }}/containers/server_browser/temp"
+        target: "/home/${{ secrets.USERNAME }}/containers/server_browser/public/"
         overwrite: 1
-
-  CopyLocal:
-    name: Copy Local Files
-    needs: [DeployBrowser]
-    runs-on: ubuntu-latest
-    steps:
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.LOWORBITHOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: 22
-        script: echo ${{ secrets.PASSWORD }} | sudo -S cp /home/${{ secrets.USERNAME }}/containers/server_browser/temp/* /home/${{ secrets.USERNAME }}/containers/server_browser/public/*
