@@ -16,7 +16,7 @@ let model = {
     currentFilter: '',
     hideFull: false,
     currentMaxPing: 400,
-    currentGametype: ['slayer', 'koth', 'ctf', 'assault', 'infection', 'juggernaut', 'vip', 'oddball', 'forge', 'none'],
+    currentGametype: ['slayer', 'koth', 'ctf', 'assault', 'infection', 'juggernaut', 'vip', 'oddball', 'forge', 'territories', 'none'],
     currentHasPlayers: 0,
     currentPlaylist: 'social',
     playerCount: 0,
@@ -315,7 +315,8 @@ let pins = {
     '104.248.145.93:11765': 1,
     '104.248.145.93:11755': 1,
     '104.248.145.93:11745': 1,
-    '104.248.145.93:11735': 1
+    '104.248.145.93:11735': 1,
+    '167.114.155.83:11775': 1
 };
 
 function ping(info) {
@@ -628,7 +629,7 @@ function onHideFull(query) {
 
 function onGametype(query) {
     if(query == 'all') {
-       model.currentGametype = ['slayer', 'koth', 'ctf', 'assault', 'infection', 'juggernaut', 'vip', 'oddball', 'forge', 'none']; 
+       model.currentGametype = ['slayer', 'koth', 'ctf', 'assault', 'infection', 'juggernaut', 'vip', 'oddball', 'forge', 'territories', 'none']; 
     } else {
     model.currentGametype = query;
     }
