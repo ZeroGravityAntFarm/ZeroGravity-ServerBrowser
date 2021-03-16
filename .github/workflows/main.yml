@@ -2,7 +2,7 @@ name: scp browser
 on: 
   push:
     branches:
-      - master
+      - main
 jobs:
   DeployMaps:
     name: scp browser
