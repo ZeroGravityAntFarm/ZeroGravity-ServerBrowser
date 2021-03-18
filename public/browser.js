@@ -1,11 +1,11 @@
 const masterServers = [
-    'http://master01.zerogravityantfarm.com:8080/list',
-    'http://master00.zerogravityantfarm.com/list',
     'http://128.199.255.204/list',
     'http://159.89.54.77/list',
     'http://163.47.20.136/list',
     'http://167.99.162.127/list',
-    'http://178.62.87.108/list'
+    'http://178.62.87.108/list',
+    'http://master01.zerogravityantfarm.com:8080/list',
+    'http://master00.zerogravityantfarm.com/list'
 ];
 
 const playlists = ['all', 'social','ranked','customs','favourites'];
