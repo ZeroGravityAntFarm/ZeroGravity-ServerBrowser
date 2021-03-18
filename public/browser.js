@@ -7,7 +7,7 @@ const masterServers = [
     'http://167.99.162.127/list',
     'http://178.62.87.108/list'
 ];
-//test
+
 const playlists = ['all', 'social','ranked','customs','favourites'];
 
 let pingQueue = [];
